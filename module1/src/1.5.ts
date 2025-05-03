@@ -1,11 +1,16 @@
 //Reference type ==> Object
 
 const user: {
+  readonly company: string; //ype ==> literal type
   firstName: string;
-  middleName: string;
+  middleName?: string; //optional type
   lastName: string;
+  isMarried: boolean;
 } = {
+  company: "Programming Hero",
   firstName: "Abdullah",
-  middleName: "Rafi",
   lastName: "Bhuiyan",
+  isMarried: true,
 };
+
+// user.company = "ph";
