@@ -22,8 +22,12 @@
   console.log(result1);
   console.log(result2);
 
+  type CustomError = {
+    message: string;
+  };
+
   try {
   } catch (error) {
-    console.log(error.message);
+    console.log((error as CustomError).message);
   }
 }
