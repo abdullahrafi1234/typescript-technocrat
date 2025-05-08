@@ -6,5 +6,5 @@
 
   anything = 222;
 
-  //   (anything as string)
+  (anything as string).length;
 }
